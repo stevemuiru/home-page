@@ -3,33 +3,43 @@ body {
 }
 h1{
   font-size: 50px;
+  font-family: Impact, serif;
 }
 
-#about-me{
-   display: flex;
-   justify-content: center;
-   align-items: center;
+#about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px; 
+  padding-bottom: 60px; 
 }
+
 .header{
     display: flex;
     gap: 10px;
 }
-.about-me-box{
-    width: 550px;
-    height: 45vh;
-    margin-top: 50px;
-    padding: 1.5em;
-    margin-left: -5px;
-    border-radius: 2px solid #ffffff;
-    
+
+.header img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
-.social-icons{
-    text-align: right;
-    gap: 35px;
+
+.about-me-box {
+  width: 550px;
+  min-height: 300px;
+  margin-top: 20px;
+  padding: 1.5em;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
 }
-h1{
-    font-family: Impact, serif;
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 35px;
+  margin-top: 1em;
 }
+
 #my-work {
     display: flex;
     flex-direction: column;
@@ -134,5 +144,26 @@ h1{
     height: auto;
     border-radius: 10px;
   }
+  @media (max-width: 1024px) {
+    .footer-details {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .footer-details img {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  
+    .home-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  }
+  
   
   
